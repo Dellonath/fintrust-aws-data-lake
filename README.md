@@ -118,3 +118,41 @@ Design this system including:
 - Diagrams or pseudocode for pipelines.
 - Governance and cost control decisions.
 - Evolution plan from MVP to enterprise-scale platform.
+
+
+# Conventional Commits
+
+Use the following commit message types to maintain consistency and clarity in version control:
+
+- **test**: Indicates the creation or modification of test-related code.  
+  _Example: Adding unit tests._
+
+- **feat**: Introduces a new feature to the project.  
+  _Example: Adding a new service, functionality, or endpoint._
+
+- **refac**: Refactors code without changing business logic or behavior.  
+  _Example: Code improvements after a code review._
+
+- **style**: Formatting or style changes that do not affect the system’s functionality.  
+  _Example: Adjusting indentation, removing trailing spaces or comments, updating lint rules._
+
+- **fix**: Applies a bug fix that resolves an error or incorrect behavior.  
+  _Example: Adding error handling for a function returning unexpected results._
+
+- **chore**: Development-related tasks that don’t affect code logic or tests.  
+  _Example: Updating `.gitignore`, configuring eslint, adding Prettier._
+
+- **docs**: Documentation changes only.  
+  _Example: Updating API documentation or README._
+
+- **build**: Changes that affect the build system or external dependencies.  
+  _Example: Adding/removing NPM packages or modifying Gulp configuration._
+
+- **perf**: Performance improvements.  
+  _Example: Replacing `forEach` with `while`, optimizing SQL queries._
+
+- **ci**: CI/CD configuration changes.  
+  _Example: Updating CircleCI, Travis, or GitHub Actions workflows._
+
+- **revert**: Reverts a previous commit.  
+  _Example: Reverting commit `abc123` that caused an issue._
