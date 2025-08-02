@@ -16,16 +16,14 @@
    - [6. Cost Optimization](#6-cost-optimization)  
 5. [✅ Challenge](#-challenge)
 6. [🚀 Conventional Commits](#-conventional-commits)
+7. [📚 References](#-references)
 
 ## 🧾 About FinTrust
 
 **FinTrust** is a digital financial services provider operating across the world. It offers products like personal loans, credit card management, and investment advisory through mobile and web platforms. The company handles high data volume from financial transactions, user behavior, and third-party integrations, demanding robust data infrastructure for analytics, compliance, and real-time decision-making.
 
-
 ## 🎯 Objective
 Build a scalable, secure, and cost-effective **data lake on AWS** to centralize raw, curated, and analytics-ready data for **Business Intelligence, Machine Learning, and Compliance Reporting**.
-
----
 
 ## 📌 High-Level Business Requirements
 
@@ -38,8 +36,6 @@ Build a scalable, secure, and cost-effective **data lake on AWS** to centralize 
   Credit score agencies, FX rates.
 - **CSV/Excel Files**  
   Monthly partner reports (uploaded to S3).
-
----
 
 ### 2. Use Cases
 - **Regulatory Reporting**
@@ -55,8 +51,6 @@ Build a scalable, secure, and cost-effective **data lake on AWS** to centralize 
 - **Dashboarding**
   - Amazon QuickSight and Redshift Spectrum.
 
----
-
 ### 3. Functional Requirements
 - Ingest **batch and streaming data**.
 - Centralize all data in **S3** with **lakehouse architecture**.
@@ -64,8 +58,6 @@ Build a scalable, secure, and cost-effective **data lake on AWS** to centralize 
 - Enable **data discovery** via catalog.
 - Secure PII and sensitive data.
 - Maintain **audit trails** and **data lineage**.
-
----
 
 ### 4. Non-Functional Requirements
 - Scalable to **10 TB/month** of raw data.
@@ -76,8 +68,6 @@ Build a scalable, secure, and cost-effective **data lake on AWS** to centralize 
 - Use **serverless** whenever possible.
 - **Separation of zones**: raw, curated, analytics.
 - Fine-grained **access control** per zone and per team.
-
----
 
 ## 📐 Expected Deliverables
 
@@ -90,21 +80,15 @@ End-to-end AWS architecture covering:
 - Consumption (QuickSight, SageMaker, Redshift Spectrum)
 - Governance (IAM, KMS, CloudTrail)
 
----
-
 ### 2. Storage Layer Design
 - Directory structure per zone.
 - Partitioning strategy (e.g., date, region, product).
 - File formats (Parquet, JSON, Avro) — with trade-off analysis.
 - Naming conventions and versioning.
 
----
-
 ### 3. Ingestion Strategy
 - Real-time pipelines (Kinesis Data Firehose / Kafka Connect).
 - Batch pipelines (Glue ETL, Lambda, Step Functions).
-
----
 
 ### 4. Security & Governance
 - **Encryption**: SSE-KMS.
@@ -112,14 +96,10 @@ End-to-end AWS architecture covering:
 - **Data classification and tagging**.
 - **Access control matrix** per role/team.
 
----
-
 ### 5. Data Quality & Observability
 - Data validation (nulls, types, ranges).
 - Logging and alerting (CloudWatch, SNS).
 - Monitoring and retries.
-
----
 
 ### 6. Cost Optimization
 - S3 Lifecycle policies (transition to Glacier).
@@ -127,16 +107,12 @@ End-to-end AWS architecture covering:
 - Minimize small files.
 - Use spot instances and serverless compute when applicable.
 
----
-
 ## ✅ Challenge
 Design this system including:
 - Clear justification of each AWS service.
 - Diagrams or pseudocode for pipelines.
 - Governance and cost control decisions.
 - Evolution plan from MVP to enterprise-scale platform.
-
----
 
 ## 🚀 Conventional Commits
 
@@ -174,3 +150,6 @@ Use the following commit message types to maintain consistency and clarity in ve
 
 - **revert**: Reverts a previous commit.  
   _Example: Reverting commit `abc123` that caused an issue._
+
+## 📚 References
+- [Build a Real Time Data Streaming System with AWS Kinesis, Lambda Functions and a S3 Bucket](https://www.youtube.com/watch?v=We5Jr4GGLL0)
