@@ -1,3 +1,4 @@
+
 # 🏢 FinTrust AWS Data Lake
 
 1. [🧾 About FinTrust](#-company-overview-fintrust)  
@@ -150,6 +151,21 @@ Use the following commit message types to maintain consistency and clarity in ve
 
 - **revert**: Reverts a previous commit.  
   _Example: Reverting commit `abc123` that caused an issue._
+
+# Welcome to your CDK Python project!
+
+To add additional dependencies, for example other CDK libraries, just add
+them to your `setup.py` file and rerun the `pip install -r requirements.txt`
+command.
+
+## Useful commands
+
+ * `cdk bootstrap`   preparing AWS account for CDK usage
+ * `cdk ls`          list all stacks in the app
+ * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk docs`        open CDK documentation
 
 ## 📚 References
 - [Build a Real Time Data Streaming System with AWS Kinesis, Lambda Functions and a S3 Bucket](https://www.youtube.com/watch?v=We5Jr4GGLL0)
