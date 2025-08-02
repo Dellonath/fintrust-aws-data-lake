@@ -1,7 +1,5 @@
 # 🏢 FinTrust AWS Data Lake
 
-## 📚 Table of Contents
-
 1. [🧾 About FinTrust](#-company-overview-fintrust)  
 2. [🎯 Objective](#-objective)  
 3. [📌 High-Level Business Requirements](#-high-level-business-requirements)  
