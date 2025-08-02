@@ -1,6 +1,25 @@
 # 🏢 FinTrust AWS Data Lake
 
-## 🧾 About the company
+## 📚 Table of Contents
+
+1. [🧾 About FinTrust](#-company-overview-fintrust)  
+2. [🎯 Objective](#-objective)  
+3. [📌 High-Level Business Requirements](#-high-level-business-requirements)  
+   - [1. Data Sources](#1-data-sources)  
+   - [2. Use Cases](#2-use-cases)  
+   - [3. Functional Requirements](#3-functional-requirements)  
+   - [4. Non-Functional Requirements](#4-non-functional-requirements)  
+4. [📐 Expected Deliverables](#-expected-deliverables)  
+   - [1. Architecture Diagram](#1-architecture-diagram)  
+   - [2. Storage Layer Design](#2-storage-layer-design)  
+   - [3. Ingestion Strategy](#3-ingestion-strategy)  
+   - [4. Security & Governance](#4-security--governance)  
+   - [5. Data Quality & Observability](#5-data-quality--observability)  
+   - [6. Cost Optimization](#6-cost-optimization)  
+5. [✅ Challenge](#-challenge)
+6. [🚀 Conventional Commits](#-conventional-commits)
+
+## 🧾 About FinTrust
 
 **FinTrust** is a digital financial services provider operating across the world. It offers products like personal loans, credit card management, and investment advisory through mobile and web platforms. The company handles high data volume from financial transactions, user behavior, and third-party integrations, demanding robust data infrastructure for analytics, compliance, and real-time decision-making.
 
@@ -119,8 +138,9 @@ Design this system including:
 - Governance and cost control decisions.
 - Evolution plan from MVP to enterprise-scale platform.
 
+---
 
-# Conventional Commits
+## 🚀 Conventional Commits
 
 Use the following commit message types to maintain consistency and clarity in version control:
 
