@@ -1,13 +1,12 @@
 from aws_cdk import (
-    Stack,
-    aws_ec2 as ec2
+    Stack
 )
 from constructs import Construct
 from .nested.rds import RDS
-from .nested.s3 import Bucket
+from ..common.common_stack import CommonStack
 
-class BatchIngestionStack(Stack):
-    def __init__(self, scope: Construct, id: str, **kwargs) -> None:
+class BatchStack(Stack):
+    def __init__(self, scope: Construct, id: str, common_stack: CommonStack, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
         
         # self.vpc = ec2.Vpc.from_lookup(self, 'VPC',
@@ -15,4 +14,3 @@ class BatchIngestionStack(Stack):
         # )
         
         RDS(self, 'RDS')
-        Bucket(self, 'Buckets')

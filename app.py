@@ -3,10 +3,13 @@ import os
 
 import aws_cdk as cdk
 
-from cdk.batch_ingestion.batch_ingestion_stack import BatchIngestionStack
+from cdk.common.common_stack import CommonStack
+from cdk.batch.batch_stack import BatchStack
+from cdk.streaming.streaming_stack import StreamingStack
 
 
 app = cdk.App()
-env = cdk.Environment(account=os.getenv('CDK_DEFAULT_ACCOUNT'), region=os.getenv('CDK_DEFAULT_REGION'))
-BatchIngestionStack(app, 'FintrustAwsDataLake', env=env)
+common_stack = CommonStack(app, 'FintrustCommonStack')
+# batch_stack = BatchStack(app, 'FintrustBatchStack', common_stack)
+streaming_stack = StreamingStack(app, 'FintrustStreamingStack', common_stack)
 app.synth()
