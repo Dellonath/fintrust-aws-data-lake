@@ -28,7 +28,7 @@ class StreamingKinesis(NestedStack):
             removal_policy=RemovalPolicy.DESTROY
         )
 
-        # FIREHOUSE
+        # FIREHOSE
         self.firehose_name = 'fintrust-datastream-s3-delivery'
         self.firehose_role = iam.Role(self, 'FirehoseRole',
             assumed_by=iam.ServicePrincipal('firehose.amazonaws.com'),
